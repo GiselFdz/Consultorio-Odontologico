@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consultorio Odontológico F&L, especializado en odontología general, prótesis, implantes y tratamientos de conducto. ¡Atención personalizada y tecnología de vanguardia para toda la familia! Agenda tu turno hoy mismo.">
+  <link rel="icon" href="./media/tooth.png" type="image/x-icon">
+  <title>Tratamientos</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/tratamientos.css">
+</head>
+<body>
+ <!-- Botón de WhatsApp con "Turnos" -->
+ <a
+ href="https://api.whatsapp.com/send?phone=5492993255741&text=Hola%20me comunico por turnos" 
+ class="btn-wsp"
+ aria-label="Enviar mensaje por WhatsApp"
+ target="_blank"
+>
+ <span>📱</span> Turnos
+</a>
+
+<!-- Navegación -->
+<nav>
+ <div class="container">
+   <div class="container-logo">
+     <a href="./index.html" class="logo" aria-label="Ir a la página principal">
+       <img src="./media/Logo-c6copia.png" alt="Logo de la página" />
+     </a>
+   </div>
+   <div class="links">
+     <div class="link">
+       <a href="./index.html" class="link-item">Inicio</a>
+     </div>
+     <div class="link">
+       <a href="./tratamientos.html" class="link-item">Tratamientos</a>
+     </div>
+     <div class="link">
+       <a href="./nosotros.html" class="link-item">Nosotros</a>
+     </div>
+     <div class="link">
+       <a href="./contacto.html" class="link-item">Contacto</a>
+     </div>
+   </div>
+   <div class="toggle" id="toggle" aria-label="Menú de navegación">☰</div>
+ </div>
+</nav>
+
+  <!-- Contenido específico de la página de tratamientos -->
+  <section class="portada-tratamientos">
+    <div class="portada-tratamientos"> </div>
+     
+  </section>
+
+  <section class="tratamientos">
+    <h1>¡Descubre la sonrisa perfecta con nuestros tratamientos!</h1>
+    <p>
+      En nuestro consultorio Odontológico, nos dedicamos a cuidar y embellecer
+      tu sonrisa con una amplia gama de tratamientos de alta calidad. Nuestro
+      equipo de profesionales altamente capacitados y apasionados por la
+      odontología está aquí para brindarte la mejor atención y resultados
+      excepcionales. Ofrecemos una variedad de servicios especializados que
+      abarcan desde odontología general hasta tratamientos avanzados,
+      diseñados para satisfacer todas tus necesidades dentales. Entre nuestros
+      servicios destacados se encuentran:
+    </p>
+  </section>
+  <section  id="cards"  class="cards">
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/ogeneral-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img loading="lazy"  src="./media/ogeneral.png" alt="odontologia-general"/> 
+        </picture>
+        <div class="card-data">
+          <span>Odontología general</span>
+          <p>
+            Mantén tu salud bucal en óptimas condiciones con nuestros
+            servicios de odontología preventiva y restaurativa.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          La odontología general se enfoca en la prevención, diagnostico y
+          tratamiento de una amplia gama de condiciones dentales. Esto incluye
+          revisiones regulares, limpiezas, empastes, extracciones y otros
+          procedimientos básicos para mantener la salud bucal.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source srcset="./media/tc-small.png" 
+          media="(max-width:300px)" />
+          <img loading="lazy"  src="./media/tc.png" alt="endodoncia" />
+        </picture>
+        <div class="card-data">
+          <span>Tratamientos de conducto</span>
+          <p>
+            Rescata tus dientes afectados con nuestros tratamientos de conducto
+            que ofrecen una solución segura, efectiva y duradera.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          También conocido como endodoncia, este tratamiento se realiza cuando el tejido blando ubicado en el centro del diente(llamado pulpa) se encuentra afectado. El mismo consiste en
+          su eliminación, luego su
+          limpieza y sellado para evitar futuras infecciones.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/implantes-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img  loading="lazy" src="./media/implantes.png" alt="implantes" />
+        </picture>
+        <div class="card-data">
+          <span>Implantes</span>
+          <p>
+            Para recuperar la funcionalidad y estética de tu sonrisa te ofrecemos nuestros
+            implantes dentales de última generación.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          Los implantes dentales son una opción popular para reemplazar
+          dientes perdidos. Consisten en la colocación de un tornillo de
+          titanio en el hueso de la mandíbula, sobre el cual se coloca una
+          corona dental para restaurar la función y la estética.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/protesis-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img loading="lazy"  src="./media/protesis.png" alt="protesis" />
+        </picture>
+        <div class="card-data">
+          <span>Prótesis</span>
+          <p>
+            Utilizando materiales de primera calidad, ofrecemos prótesis
+            dentales que se adaptan perfectamente a las necesidades
+            individuales de cada persona.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          Una prótesis dental esta diseñada para
+          reemplazar dientes perdidos y restaurar la función masticatoria y la
+          estética de la sonrisa. Estas pueden ser parciales, o
+          completas. De materiales seguros y resistentes, se
+          ajustan cuidadosamente a la forma y color de los dientes naturales
+          para lograr un aspecto natural.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+    <section id="cards"  class="cards">
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/placar-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img loading="lazy"  src="./media/placar.png" alt="placa-relajacion"/>
+        </picture>
+        <div class="card-data">
+          <span>Placas de relajación</span>
+          <p>
+            Combate el bruxismo y el TMJ con nuestras placas de relajación
+            personalizadas para un mejor descanso dental.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          Las placas de relajación, también conocidas como férulas de
+          descarga, se utilizan para tratar el bruxismo (rechinar de dientes). Estas placas se colocan
+          sobre los dientes para protegerlos de la presión y el desgaste
+          causados por el rechinamiento involuntario.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/limpieza-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img loading="lazy"  src="./media/limpieza.png" alt="limpieza" />
+        </picture>
+        <div class="card-data">
+          <span>Limpieza dental</span>
+          <p>
+            Disfruta de una limpieza profunda y revitalizante que dejará tus
+            dientes impecables y saludables evitando futuros problemas dentales.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          La limpieza dental profesional es esencial para mantener una buena
+          salud bucal. Durante una limpieza dental, se eliminan la placa y el
+          sarro acumulados en los dientes y se realiza un pulido para dejar
+          los dientes limpios y brillantes.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/blanqueo-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img loading="lazy"  src="./media/blanqueo.png" alt="blanqueamiento"/>
+        </picture>
+        <div class="card-data">
+          <span>Blanqueamientos</span>
+          <p>
+            Ilumina tu sonrisa con nuestros tratamientos de blanqueamiento
+            dental que te otorgan un resultado seguro y efectivo.
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          El blanqueamiento dental es un tratamiento estético que busca
+          aclarar el color de los dientes y eliminar manchas y decoloraciones.
+          Puede realizarse en el consultorio o en casa con los kits de
+          blanqueamiento supervisados por un dentista.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-front">
+        <picture class="card-tratamiento">
+          <source
+            srcset="./media/carillas-small.jpg"
+            media="(max-width:600px)"
+          />
+          <img loading="lazy"  src="./media/carillas.jpg" alt="carillas" />
+        </picture>
+        <div class="card-data">
+          <span>Carillas de porcelana</span>
+          <p>
+            Las carillas de porcelana son resistentes, duraderas y se asemejan al color natural de tus dientes, brindándote una sonrisa radiante y natural.
+           
+          </p>
+        </div>
+      </div>
+      <div class="card-back">
+        <p>
+          Una carilla de porcelana es una fina lamina de cerámica que se coloca sobre la superficie frontal de un diente para mejorar su apariencia. Es como una funda personalizada que corrige imperfecciones como manchas, dientes desgastados o astillados entre otros.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__sections">
+      <div class="footer__sections-container">
+        <div class="footer__section">
+          <h3 class="footer__section-title">Menu</h3>
+          <ul class="footer__section-links">
+            <li><a href="./index.html" class="footer__section-link">Inicio</a></li>
+            <li><a href="./tratamientos.html" class="footer__section-link">Tratamientos</a></li>
+            <li><a href="./nosotros.html" class="footer__section-link">Nosotros</a></li>
+            <li><a href="./contacto.html" class="footer__section-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <article class="footer__section">
+          <h3 class="footer__section-title">Contacto</h3>
+          <ul class="footer__section-table">
+            <li class="footer__section-links">
+              <a class="footer__section-link" href="https://www.gmail.com/" target="_blank">
+                <img width="30px" src="./media/email-svgrepo-com.svg" alt="email"> consultorioodontologicof@gmail.com
+              </a>
+            </li>
+            <li class="footer__section-links">
+              <a class="footer__section-link" href="a">
+                <img width="30px" src="./media/telephone-svgrepo-com.svg" alt="telefono"> 4781808
+              </a>
+            </li>
+            <li class="footer__section-links">
+              <a class="footer__section-link" href="https://web.whatsapp.com/" target="_blank">
+                <img width="30px" src="./media/whatsapp-svgrepo-com (1).svg" alt="whatsapp"> +54 299 3255741
+              </a>
+            </li>
+            <li class="footer__section-links">
+              <a class="footer__section-link" href="https://maps.app.goo.gl/JUWfYJW3csvEu93VA" target="_blank">
+                <img width="30px" src="./media/map-pin-alt-svgrepo-com.svg" alt="direccion"> Roca 1869, Cipolletti
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <div class="footer__section">
+          <h3 class="footer__section-title">Compartir</h3>
+          <div class="social__container">
+            <a href="https://facebook.com" class="social__icon" aria-label="Facebook" target="_blank">
+              <img src="./media/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com" class="social__icon" aria-label="Instagram" target="_blank">
+              <img src="./media/instagram.svg" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com" class="social__icon" aria-label="Twitter" target="_blank">
+              <img src="./media/twitter-x.svg" alt="Twitter" />
+            </a>
+            <a href="https://linkedin.com" class="social__icon" aria-label="Linkedin" target="_blank">
+              <img src="./media/linkedin.svg" alt="Linkedin" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__copy-text">
+      <p>
+        &copy; 2025 Consultorio Odontológico F&L. Todos los derechos reservados. 
+        <a href="#" class="footer__copy-link">Términos y condiciones</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script para manejar el toggle del menú -->
+  <script src="./js/toogle.js"></script>
+  
+</body>
+</html>

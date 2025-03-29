@@ -1,0 +1,145 @@
+
+.portada-tratamientos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 50vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../media/tratamientos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.tratamientos h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.tratamientos p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 70px;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  display: grid; /* Usamos grid en lugar de flex */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Hacemos que las tarjetas se distribuyan automáticamente */
+  gap: 20px; /* Espaciado entre tarjetas */
+  justify-items: center; /* Alinea las tarjetas en el centro */
+}
+
+.card {
+  min-width: 260px; /* Tamaño mínimo de las tarjetas para pantallas pequeñas */
+  max-width: 320px; /* Máximo ancho de la tarjeta */
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el contenido esté distribuido */
+  height: 350px; /* Altura fija para las tarjetas */
+}
+
+.card-back,
+.card-front {
+  backface-visibility: hidden;
+  transition: transform 1s;
+  background-color: rgb(192, 213, 231);
+  border-radius: 20px;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.card:hover .card-front {
+  transform: perspective(1200px) rotateY(180deg);
+}
+
+.card:hover .card-back {
+  transform: perspective(1200px) rotateY(360deg);
+}
+
+.card-front {
+  transform: perspective(1200px) rotateY(0deg);
+}
+
+.card-back {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  transform: perspective(1200px) rotateY(180deg);
+}
+
+.card-tratamiento {
+  max-height: 160px;
+  overflow: hidden;
+  display: block;
+}
+
+.card-tratamiento img {
+  max-width: 100%;
+  height: auto; /* Asegura que las imágenes mantengan la proporción */
+}
+
+.card-data {
+  padding: 10px;
+  flex-grow: 1; /* Hace que la tarjeta crezca para ocupar el espacio disponible */
+}
+
+.card-data p {
+  font-size: 1rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+  text-align: center;
+}
+
+.card-back p {
+  font-size: 1rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+}
+
+.card-data span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 6px 0;
+  display: block;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .card {
+    max-width: 45%; /* Mayor tamaño en pantallas medianas */
+    min-width: 300px;
+    height: 400px; /* Mayor altura en pantallas medianas */
+  }
+
+  .card-data p {
+    font-size: 1.1rem; /* Ajusta el tamaño del texto para pantallas medianas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr); /* En pantallas grandes, 4 columnas */
+    gap: 30px; /* Mayor espacio entre las tarjetas */
+  }
+
+  .card {
+    height: 420px; /* Ajuste de la altura de la tarjeta */
+  }
+
+  .card-data p {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto */
+  }
+}

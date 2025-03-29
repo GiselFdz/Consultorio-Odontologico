@@ -1,0 +1,114 @@
+/* Estilos para la portada */
+
+.portada-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ), url("../media/p-nosotros.png"); /* Ruta de imagen ajustada */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+
+h1 {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  p {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+  
+  /* Estructura general para la sección */
+#bio .bio1, #bio2 .bio2 {
+  display: flex;
+  flex-direction: row; /* Disposición en fila por defecto */
+  justify-content: center;
+  gap: 30px; /* Espacio entre imagen y texto */
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+/* Contenedor de imágenes */
+.img-cont, .img-cont2 {
+  width: 48%; /* Ajustamos a un 48% para mantener consistencia */
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Agrega un borde redondeado a las imágenes */
+}
+
+/* Imagen dentro del contenedor */
+.img-cont img, .img-cont2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px; /* Borde redondeado */
+}
+
+/* Contenedor del texto */
+#bio .texto-bio1, #bio2 .texto-bio2 {
+  width: 48%; /* Consistencia en el ancho del texto */
+  max-width: 600px;
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px; /* Espacio entre texto y borde izquierdo */
+  padding-right: 20px; /* Espacio entre texto y borde derecho */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  #bio .bio1, #bio2 .bio2 {
+    flex-direction: column; /* Apilar imagen y texto */
+    align-items: center; /* Centrar contenido */
+    gap: 15px; /* Menos espacio entre imagen y texto */
+  }
+
+  .img-cont, .img-cont2 {
+    width: 80%; /* Ocupa el 80% en pantallas pequeñas */
+    height: 300px;
+  }
+
+  #bio .texto-bio1, #bio2 .texto-bio2 {
+    width: 80%; /* Ajustar el ancho del texto */
+    padding-left: 10px; /* Menos espacio en pantallas pequeñas */
+    padding-right: 10px;
+  }
+}
+
+/* Ajuste para pantallas grandes */
+@media screen and (min-width: 1024px) {
+  #bio .texto-bio1, #bio2 .texto-bio2 {
+    padding-left: 30px; /* Más espacio en pantallas grandes */
+    padding-right: 30px; /* Más espacio en pantallas grandes */
+  }
+}
+@media screen and (max-width: 768px) {
+  #bio .bio1, #bio2 .bio2 {
+    flex-direction: column; /* En pantallas pequeñas, las imágenes y textos se apilan */
+    align-items: center; /* Centra las imágenes y los textos */
+  }
+
+  .img-cont, .img-cont2 {
+    height: 300px; /* Ajusta la altura de las imágenes en pantallas pequeñas */
+    width: 80%; /* La imagen ocupa un 80% del ancho de la pantalla */
+    margin-bottom: 20px; /* Agrega espacio entre las imágenes y los textos */
+  }
+}

@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f1f7fa;
+  font-size: 1rem;
+}
+
+/* Estilo del botón de WhatsApp */
+.btn-wsp {
+  position: fixed;
+  width: auto;
+  height: 60px;
+  line-height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Aseguramos que el botón siempre esté por encima de otros elementos */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 300ms ease;
+  max-width: 90%; /* Agrega un max-width para que no sobrepase el borde */
+}
+
+.btn-wsp:hover {
+  background: #20ba5a;
+}
+
+/* En pantallas más pequeñas */
+@media only screen and (min-width:320px) and (max-width: 768px) {
+  .btn-wsp {
+    font-size: 18px;
+    width: auto;
+    height: 50px;
+    padding: 5px 10px;
+    bottom: 60px; /* Ajusta la distancia desde el fondo */
+    right: 170px; /* Ajusta la distancia desde la derecha */
+    max-width: 50%; /* Limita el tamaño máximo para pantallas pequeñas */
+  }
+
+  .btn-wsp span {
+    font-size: 22px;
+  }
+}
+
+
+
+nav {
+  background: #48e;
+  height: 80px;
+  position: relative;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  line-height: 80px;
+  z-index: 100;
+}
+
+/* Estilo del logo */
+.container-logo {
+  margin-left: 20px;
+  padding-top: 10px;
+  z-index: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Alineación vertical */
+  
+}
+
+.logo img {
+  height: 60px; /* Ajusta según el tamaño del logo */
+  width: auto; /* Mantén la relación de aspecto del logo */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .logo img {
+    height: 50px; /* Reduce el tamaño del logo en pantallas pequeñas */
+  }
+}
+
+/* Enlaces */
+.links {
+  display: flex; /* Para pantallas grandes, los enlaces se mostrarán en fila */
+  justify-content: center; /* Centra los enlaces */
+  align-items: center;
+  gap: 25px;
+}
+
+.links .link {
+  display: inline-block;
+}
+
+.links .link a {
+  text-decoration: none;
+  color: rgb(221, 227, 236);
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+.links .link a:hover {
+  color: #19375e;
+}
+
+/* Menú móvil - Toggle */
+.toggle {
+  color: #d1faf4;
+  margin-right: 20px;
+  font-size: 30px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: none; /* Solo se muestra en pantallas pequeñas */
+}
+
+.toggle.rotate {
+  transform: rotate(180deg); /* Rota el ícono cuando el menú está abierto */
+}
+
+/* Menú de navegación links - En pantallas pequeñas */
+.links {
+  position: absolute;
+  top: -100vh; /* Inicialmente está fuera de la vista */
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: top 0.5s ease; /* Efecto deslizante */
+}
+
+.links.active {
+  top: 80px; /* El menú se desliza hacia abajo */
+}
+
+.links .link a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.links .link a:hover {
+  color: #48e; /* Efecto hover */
+}
+
+@media screen and (max-width: 800px) {
+  .toggle {
+    display: inline-block;
+  }
+
+  .links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: rgba(1, 1, 1, 0.7);
+    text-align: center;
+    z-index: 9999;
+    overflow: hidden;
+    height: calc(80vh - 80px);
+    width: 100%;
+    top: -100vh;
+    transition: 0.5s;
+  }
+
+  .active {
+    top: 80px;
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 769px) {
+  .links {
+    position: static;
+    top: 0;
+    background: transparent;
+    display: flex; /* Muestra los enlaces en fila */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .links .link a {
+    color: rgb(221, 227, 236);
+    font-size: 18px;
+    margin: 0 25px;
+    text-transform: uppercase;
+  }
+
+  .links .link a:hover {
+    color: #19375e;
+  }
+}
+
+
+/* Footer */
+.footer {
+  background-color: #48e;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__sections {
+  background-color: #48e;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer__section-title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer__section-links {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.footer__section-link {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer__section-link img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.footer__section-links li {
+  color: white;
+}
+
+.social__container {
+  margin-bottom: 1rem;
+}
+
+.social__icon {
+  margin-right: 15px;
+}
+
+.social__icon img {
+  height: 28px;
+}
+
+.footer__copy-text {
+  text-align: center;
+  color: rgb(221, 227, 236);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.footer__copy-link {
+  color: rgb(221, 227, 236);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 850px) {
+  .footer__section {
+    width: 49%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .footer__section {
+    width: 90%;
+  }
+
+  .footer__copy-text {
+    font-size: 1rem;
+  }
+}
+
+
